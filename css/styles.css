@@ -1,0 +1,646 @@
+/*codigo que se aplica a toda la pagina*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+}
+
+h1, h2, h3, p, ul, img, button {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*web Principal*/
+
+.fondo{
+    background: #2F303A; 
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 1200px;
+    
+}
+
+
+
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;   /* 60px/44px= 1.36*/
+        /* or 136% */
+    
+        
+    color: #FFFFFF;
+
+    
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+      
+    
+    /*width: 1600px;
+    height: 600px;
+    left: -4px;
+    top: 80px;
+
+   background: #2F303A;*/
+    
+}
+
+/* section nuestro equipo fondo page principal */
+.our-team {  
+    
+    background: #F5F4FA;
+    padding: 94px 90px 0px 90px;
+
+}
+
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;   /* 42px/36px= 1.16  */
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;  /* 19px/16px= 1.18  */
+    /* identical to box height  text-align: center; */
+    
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    
+}
+
+.job{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;    /* 19px/16px= 1.18  */
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+/* Encabezado web portfolio, web Principal*/
+span { color: #212121;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;}
+
+.webstudio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.study{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #212121;
+}
+.study:hover {      
+    color: #2196F3;
+    
+} /* CSS link hover (azul) */
+
+.study:focus {
+    color: #2196F3; 
+    } /* CSS link focus  solo letra con color (azul)  con tab */
+
+.study-active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    /*font-size: 14px;
+    line-height: 16px; para la tarea 3 */
+
+    color: #2196F3;}/* CSS link NAV (azul) */
+
+.portfolio{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #212121;
+}
+.portfolio:hover {
+    color: #2196F3;} /* CSS link hover (azul) */
+
+.portfolio:focus {
+    color: #2196F3;
+    } /* CSS link focus  (azul)  con tab */
+
+.portfolio-active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    /*font-size: 14px;
+    line-height: 16px;  para la tarea 3 */ 
+    color: #2196F3;}   /* CSS link navegacion  toca con el mismo nombre de la clase pero agregando otra palabra nav(azul) */
+
+.contacs{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #212121;
+}
+.contacs:hover {
+    color: #2196F3;
+}/* CSS link hover (azul) */
+
+.contacs:focus {
+    color: #2196F3;
+    } /* CSS link focus  (azul)  con tab */
+
+.email{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;   /* 16px/14px= 1.14  */
+    letter-spacing: 0.02em;
+
+    color: #757575;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.18;  /* 19px/16px= 1.18  */
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.email:hover {
+    color: #2196F3;
+}/* CSS link hover (azul) */
+
+.email:focus {
+    color: #2196F3; 
+    } /* CSS link focus  (azul)  con tab */
+
+.numbertel{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.18;  /* 19px/16px= 1.18  */
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+
+.numbertel:hover {
+    color: #2196F3;
+}/* CSS link hover (azul) */
+
+.numbertel:focus {
+    color: #2196F3;
+    } /* CSS link focus  (azul)  con tab */
+
+/*section button  web html principal*/
+.mybutton-1 {
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;  /* 30px/16px= 1.87  */
+
+    color: #FFFFFF;
+    
+    padding: 10px 32px 10px 32px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    }
+    
+.mybutton-1:hover {
+    cursor: pointer;
+    cursor: hand;
+    }    
+
+.mybutton-1:focus {
+    background: #2196F3;
+    color: #FFFFFF 
+    } /* CSS link focus  (azul)  con tab */
+
+/*section buttons  web portfolio*/
+
+.mybutton {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    color: #212121;
+    
+     
+
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 18px 6px 18px;
+    margin-left: 8px;
+   
+
+    }
+
+.buttons-portfolio {
+    font-family: inherit;
+    background-color: var(--tertiary-color);
+    color: #212121;
+    font-size: 16px;
+    line-height: 1, 625em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 18px 6px 18px;
+    margin-left: 8px;
+    }
+
+.mybutton:hover {
+    background: rgba(33, 150, 243, 1);
+    color: #FFFFFF;
+    cursor: pointer;
+    cursor: hand;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;  /* 26px/16px= 1.62  */
+}
+
+.mybutton:focus {
+    background: #2196F3; 
+    color: #FFFFFF
+    } /* CSS link focus  (azul)  con tab */
+
+/*section description products */
+.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;  /* 46px/18px= 2  */
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+
+    color: #212121;
+
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;    /* 30px/16px= 1.87 */
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    margin: 0;
+}
+/*direccion para principal and portfolio*/
+.address{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;  /* 24px/14px= 1.71 */
+    /* or 171% 
+    
+    letter-spacing: 0.03em;*/
+    
+    color: #FFFFFF;  /*Este color cuando tengamos la caja con los pading*/ 
+    
+}
+
+/*footer o pie de pagina de las dos paginas */ 
+.bottom-page{
+    /*width: 1600px;
+    height: 252px;    se deja para despues */
+    
+    left: 0px;
+    top: 1628px;
+    padding: 60px 0px 60px 215px;
+    line-height: 2em;
+
+background: #2F303A;
+
+}
+
+.webstudio-footer {
+    display: flex;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+    text-decoration: none;
+  
+}
+
+
+span1 { color: #FFFFFF;
+    
+    }
+
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', 'sans-serif';
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+    margin: 0;
+    }
+        
+ /*para volver encabezado horizontal con padding y flex*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type:none; /*quitar viñetas en todo el body*/
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    
+  }
+  
+  a {
+    text-decoration: none;  /*quitar subrayado en todo el body*/
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .webstudio span {
+    font-weight: normal;
+  }
+  
+  .study-active {
+    color:#2196F3;
+  }
+
+  /* Generic styles 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }  ya esta aplicado en los estilos generales comienzo codigo falta margin y padding*/
+  
+  /* Container class */
+  
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+  
+  /*centrado Y ALINEACION  de section 2 PRODUCTOS*/
+
+  .section-products {
+    padding: 94px 10px 0px 10px ;
+    
+    
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+ 
+.list-style {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content-center {
+    justify-content: center;
+    display:flex;
+    
+
+}
+
+.horizontal-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box-products {
+    /*width: 300px;
+    margin-left: 32px;*/
+    margin: 0 20px;
+    
+}
+
+.box-products:first-child {
+    margin-left: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+section {
+    display: block; 
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.section-products .list-style {
+    display: flex;
+    justify-content: space-between;
+
+        
+
+  }
+  
+  .box-products {
+    width: calc(25% - 20px); /* ajustar el ancho de los cuadros de productos */
+    margin: 0 10px; /* agregar un margen entre los elementos */
+  }
+
+
+/*centrado y alineacion  section 3*/
+
+.subtitle-sections {
+    color: black;
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-studio {
+    margin-right: 10px;
+    
+}
+
+/*centrado y alineacion  section 3*/
+
+.card-members {
+    
+    margin-right: 30px;
+
+    background: #FFFFFF;
+
+    /* para curvar bordes inferiores*/
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+}
+
+
+.header{
+
+    display: flex;
+}
+
+/* MEjoras pagina portafolio, faltaba agregar dos clase para work todo de acuerdo a model box */
+
+/*buttoms*/
+.filter {
+    width: 611px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.galery {
+    flex-wrap: wrap;
+    
+    padding-top: 4px;
+}
+.cards-portfolio {
+    
+    margin-top: 30px;
+}
+
+.link-cards {
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.17em;
+    color: black;
+}
+
+.description-card {
+    padding: 20px 24px;
+    border: #F5F4FA solid 1px;
+    font-size: 0;
+    width: 370px;
+    ;
+}
+
+
+.text-card {
+    color: black;
+    font-size: 18px;
+    line-height: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+}
+
+.type-proyect {
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    color: #757575;
+}
+
+
+  
+
+
+
