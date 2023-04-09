@@ -1,3 +1,14 @@
+:root {
+    --brand-color: #2f303a;
+    --color-selected: #2196f3;
+    --secundary-color: white;
+    --tertiary-color: #f5f4fa;
+    --go-service: #188ce8;
+    --principal-text-color: #757575;
+    --color-icons: #afb1b8;
+  }
+  
+
 /*codigo que se aplica a toda la pagina*/
 *, *::before, *::after {
     box-sizing: border-box;
@@ -12,50 +23,28 @@ h1, h2, h3, p, ul, img, button {
 
 /*web Principal*/
 
+/*photo background*/
 .fondo{
-    background: #2F303A; 
+    background-image: url(../images/fondo.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
     padding: 200px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-width: 1200px;
     
 }
 
-
-
 .title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
+    color: #FFFFFF;
     font-size: 44px;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-bottom: 30px;
+
     line-height: 1.36;   /* 60px/44px= 1.36*/
         /* or 136% */
-    
-        
-    color: #FFFFFF;
-
-    
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-      
-    
-    /*width: 1600px;
-    height: 600px;
-    left: -4px;
-    top: 80px;
-
-   background: #2F303A;*/
-    
-}
-
+}         
+       
 /* section nuestro equipo fondo page principal */
 .our-team {  
     
@@ -96,23 +85,18 @@ h3{
     letter-spacing: 0.03em;
     
     color: #212121;
-
-    
+   
 }
-
+/*description about job*/
 .job{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;    /* 19px/16px= 1.18  */
+    line-height: 1.1875;    /* 19px/16px= 1.18  */
     /* identical to box height */
-
     text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #757575;
+    margin-top: 10px;
 }
+
 
 /* Encabezado web portfolio, web Principal*/
 span { color: #212121;
@@ -135,6 +119,9 @@ span { color: #212121;
 
     letter-spacing: 0.03em;
     color: #2196F3;
+
+    padding-right: 100px;
+    
 }
 
 .study{
@@ -142,7 +129,10 @@ span { color: #212121;
     font-style: normal;
     font-weight: 500;
     color: #212121;
+    
+    
 }
+
 .study:hover {      
     color: #2196F3;
     
@@ -158,21 +148,22 @@ span { color: #212121;
     font-weight: 500;
     /*font-size: 14px;
     line-height: 16px; para la tarea 3 */
-
-    color: #2196F3;}/* CSS link NAV (azul) */
+    
+    color: #2196F3;
+}/* CSS link NAV (azul) */
 
 .portfolio{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     color: #212121;
+    
 }
-.portfolio:hover {
+.portfolio:hover,
+.portfolio:focus {
     color: #2196F3;} /* CSS link hover (azul) */
 
-.portfolio:focus {
-    color: #2196F3;
-    } /* CSS link focus  (azul)  con tab */
+ 
 
 .portfolio-active {
     font-family: 'Roboto';
@@ -187,6 +178,7 @@ span { color: #212121;
     font-style: normal;
     font-weight: 500;
     color: #212121;
+    
 }
 .contacs:hover {
     color: #2196F3;
@@ -196,79 +188,56 @@ span { color: #212121;
     color: #2196F3;
     } /* CSS link focus  (azul)  con tab */
 
-.email{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;   /* 16px/14px= 1.14  */
-    letter-spacing: 0.02em;
-
-    color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
+.link{
+   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.18;  /* 19px/16px= 1.18  */
     letter-spacing: 0.02em;
     color: #757575;
+    padding: 10px;
 }
-.email:hover {
-    color: #2196F3;
+.link:hover,
+.link:focus
+ {
+    color: var(--color-selected);
 }/* CSS link hover (azul) */
+/* CSS link focus  (azul)  con tab */
 
-.email:focus {
-    color: #2196F3; 
-    } /* CSS link focus  (azul)  con tab */
-
-.numbertel{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.18;  /* 19px/16px= 1.18  */
-    letter-spacing: 0.02em;
-
-    color: #757575;
-}
-
-
-.numbertel:hover {
-    color: #2196F3;
-}/* CSS link hover (azul) */
-
-.numbertel:focus {
-    color: #2196F3;
-    } /* CSS link focus  (azul)  con tab */
 
 /*section button  web html principal*/
 .mybutton-1 {
    
-    font-family: 'Roboto';
-    font-style: normal;
+    display: flex;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;  /* 30px/16px= 1.87  */
 
     color: #FFFFFF;
     
-    padding: 10px 32px 10px 32px;
+    padding: 10px 32px;
 
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     border-radius: 4px;
 
-    }
-    
-.mybutton-1:hover {
+    border: none;
     cursor: pointer;
-    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    }
+       
+.mybutton-1:hover,
+.mybutton-1:focus
+{
+    background-color: var(--go-service);
+    
     }    
 
-.mybutton-1:focus {
-    background: #2196F3;
-    color: #FFFFFF 
-    } /* CSS link focus  (azul)  con tab */
 
 /*section buttons  web portfolio*/
 
@@ -281,9 +250,7 @@ span { color: #212121;
     line-height: 1.62;
 
     color: #212121;
-    
-     
-
+      
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
@@ -316,6 +283,7 @@ span { color: #212121;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;  /* 26px/16px= 1.62  */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .mybutton:focus {
@@ -358,26 +326,21 @@ span { color: #212121;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;  /* 24px/14px= 1.71 */
+      /* 24px/14px= 1.71 */
     /* or 171% 
     
     letter-spacing: 0.03em;*/
     
     color: #FFFFFF;  /*Este color cuando tengamos la caja con los pading*/ 
-    
+    margin-top: 6px;
 }
 
 /*footer o pie de pagina de las dos paginas */ 
 .bottom-page{
-    /*width: 1600px;
-    height: 252px;    se deja para despues */
-    
-    left: 0px;
-    top: 1628px;
-    padding: 60px 0px 60px 215px;
+    background-color: var(--brand-color);
+    border: none;
+    padding: 60px 0;
     line-height: 2em;
-
-background: #2F303A;
 
 }
 
@@ -388,7 +351,7 @@ background: #2F303A;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.19em;
     /* identical to box height */
 
     letter-spacing: 0.03em;
@@ -397,7 +360,6 @@ background: #2F303A;
     text-decoration: none;
   
 }
-
 
 span1 { color: #FFFFFF;
     
@@ -415,44 +377,53 @@ body {
         
  /*para volver encabezado horizontal con padding y flex*/
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 25px;
   }
-  
-  nav {
+
+.link-nav {
+    padding:20px;
+    margin: 0;
+}
+
+nav {
     display: flex;
     align-items: center;
+    
   }
+
   
-  ul {
+ul {
     list-style-type:none; /*quitar viñetas en todo el body*/
     
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    
-    
+    margin-inline-end: 0px;  
+  
   }
   
-  a {
+a {
     text-decoration: none;  /*quitar subrayado en todo el body*/
     color: #333;
     font-weight: bold;
-    padding: 10px;
+    /*padding: 10px;*/
   }
   
-  .webstudio span {
+.webstudio span {
     font-weight: normal;
   }
   
-  .study-active {
+.study-active {
     color:#2196F3;
+
   }
+
 
   /* Generic styles 
  * {
@@ -463,7 +434,7 @@ header {
   
   /* Container class */
   
-  .container {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -474,7 +445,7 @@ header {
   
   /*centrado Y ALINEACION  de section 2 PRODUCTOS*/
 
-  .section-products {
+.section-products {
     padding: 94px 10px 0px 10px ;
     
     
@@ -483,6 +454,7 @@ header {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
  
 .list-style {
@@ -493,17 +465,18 @@ header {
 
 .content-center {
     justify-content: center;
-    display:flex;
-    
+    display:flex;   
 
 }
 
 .horizontal-ul {
     display: flex;
-    list-style: none;
+    
+    /*list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0;*/
 }
+
 
 .box-products {
     /*width: 300px;
@@ -519,6 +492,7 @@ header {
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+    
 }
 
 section {
@@ -531,18 +505,19 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    
 }
 
 
 .section-products .list-style {
     display: flex;
     justify-content: space-between;
-
-        
+    
 
   }
   
-  .box-products {
+
+.box-products {
     width: calc(25% - 20px); /* ajustar el ancho de los cuadros de productos */
     margin: 0 10px; /* agregar un margen entre los elementos */
   }
@@ -574,16 +549,12 @@ p {
 
     /* para curvar bordes inferiores*/
 
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
 }
 
 
-.header{
-
-    display: flex;
-}
 
 /* MEjoras pagina portafolio, faltaba agregar dos clase para work todo de acuerdo a model box */
 
@@ -603,8 +574,15 @@ border-radius: 0px 0px 4px 4px;
     padding-top: 4px;
 }
 .cards-portfolio {
-    
+    margin-right: 18px;
     margin-top: 30px;
+    /*border: 1px solid var(--tertiary-color);*/
+    
+}
+
+.cards-portfolio:hover {
+    box-shadow: 0px 0px 5px 0px rgba(53, 51, 51, 0.75);
+    cursor: pointer;
 }
 
 .link-cards {
@@ -615,11 +593,11 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .description-card {
-    padding: 20px 24px;
+    padding: 20px 34px;
     border: #F5F4FA solid 1px;
     font-size: 0;
     width: 370px;
-    ;
+    
 }
 
 
@@ -630,6 +608,7 @@ border-radius: 0px 0px 4px 4px;
     font-weight: 700;
     text-decoration: none;
     text-align: left;
+    
 }
 
 .type-proyect {
@@ -639,8 +618,143 @@ border-radius: 0px 0px 4px 4px;
     color: #757575;
 }
 
-
+/*icons page main study*/
   
+/*icons mail and phone*/
+.header-icons {
+    fill: var(--principal-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.header-svg {
+    margin-right: 10px;
+}
+
+.header-icons:hover,
+.header-icons:focus {
+    fill: #2196F3;
+}/* CSS link hover focus(azul) */
+
+/* icons antena ,clock, astronaut */
+
+.advantage {
+    display: flex;
+    padding: 25px 100px;
+    background-color: var(--tertiary-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+/* icons social media card workers*/
+
+div {
+    display: block;
+    
+}
+
+.content-center:last-child {
+    margin-right: 0;
+}
+
+
+.description-team {
+    padding: 30px;
+}
+
+.subtitle-team {
+    color: black;
+    font-size: 16px;
+    line-height: 1.1875;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* icons social media circle hover, avtive*/
+
+.circle-teams {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: VAR(--color-icons);
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-right: 10px;
+    }
+
+.circle-teams:hover,
+.circle-teams:active {
+  background-color: var(--color-selected);
+  fill: var(--secundary-color);
+  cursor: pointer;
+}
+
+/*Regular Customers icons*/
+
+.clients-box {
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-icons);
+    fill: var(--color-icons);
+    padding-top: 21px;
+    padding-bottom: 13px;
+    border-radius: 4px;
+  }
+  
+  .clients-box:hover,
+  .clients-box:active {
+    border-color: var(--color-selected);
+    fill: var(--color-selected);
+    cursor: pointer;
+  }
+
+/* link footer*/
+.link-footer {
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 2em;
+    color: white;
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.link-footer:hover,
+.link-footer:focus
+ {
+    color: var(--color-selected);
+}
+
+/* social media  footer*/
+.find-us {
+    margin-left: 70px;
+    color: var(--secundary-color);
+  }
+  
+.circle-footer {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: VAR(--secundary-color);
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #ffffff10;
+  }
+  
+.circle-footer:hover,
+.circle-footer:active {
+    background-color: var(--color-selected);
+    cursor: pointer;
+  }
+
+
+
 
 
 

@@ -15,20 +15,33 @@
 
   <body>
 
-    <header class="container">
+    <header class="container horizontal-ul header">
         <nav>
-            <a href class="webstudio" >Web<span>Studio </span> </a>
-            <ul class="header">
-                <li><a class="study" href="./index.html" > Studio </a> </li>
-                <li><a class="portfolio-active" href="./portfolio.html" > Portfolio </a></li>
-                <li><a href class="contacs"> Сontacts </a></li>
-            </ul>
+          <a href class="webstudio">Web<span>Studio </span> </a>
+    
+           <ul class="list-style horizontal-ul">
+            <li><a class="study link-nav" href="./index.html" > Studio </a> </li>
+            <li><a class="portfolio-active link-nav" href="./portfolio.html" > Portfolio </a></li>
+            <li><a href class="contacs link-nav"> Сontacts </a></li>
+          </ul>
         </nav>
-        <ul class="header">
-            <li><a href class="email"> info@devstudio.com</a></li>
-            <li> <a href class="numbertel"> +1 212-772-4150</a></li>
+        <ul class="list-style horizontal-ul" >
+          <li class="header-icons"><a class="link" href="mailto:info@devstudio.com" > 
+            <svg class="header-svg" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            info@devstudio.com
+                    
+          </a></li>
+          <li class="header-icons"> <a class="link" href ="+1 212-772-4150"> 
+            <svg class="header-svg" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +1 212-772-4150</a></li>
         </ul>
-    </header>
+      </header>
+  
+      
     <main>
 
         <section class="section container">
@@ -118,9 +131,9 @@
 
                 <li class="cards-portfolio">
                     <a><img src="./images/product9.jpg" alt="Negocio en Crecimiento" width="370">
-                        <div class="description-card"></div>
+                        <div class="description-card">
                     <h3 class="text-card">Growing Business</h3>
-                    <p class="type-proyect">Apps</p></a>
+                    <p class="type-proyect">Apps</p>
                     </div>
                     </a>
                 </li>
@@ -128,21 +141,67 @@
             </ul>
         </section>
     </main>
-    <footer class="bottom-page ">
-
-        <a href class="webstudio-footer">Web<span1>Studio </span1> </a>
-    
-        <address>
-            <ul>
+    <footer class="bottom-page  section">
+        <ul class="horizontal-ul container">
+          <li>
+            <div>
+              <a href class="webstudio-footer">Web<span1>Studio </span1> </a>
+              <address class="address">
+                <ul class="list-style">
+                  <li>
+                    <p>
+                      695 Park Ave, New York, NY 10065, <br>
+                      United States
+                    </p>
+                  </li>
+                  <li>
+                    <a href="mailto:info@example.com" class="link-footer">mailto:info@example.com</a>
+                  </li>
+                  <li>
+                    <a href="tel:+525555296000" class="link-footer">+52 55 5529 6000</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </li>
+          <li>
+            <div class="find-us">
+              <p>Find us on</p>
+              <ul class="horizontal-ul">
                 <li>
-                    <a href class="address">695 Park Ave, New York, NY 10065, United States</a>
+                  <a class="circle-footer">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li><a href class="email"> info@devstudio.com</a></li>
-                <li> <a href class="numbertel"> +1 212-772-4150 </a></li>
-            </ul>
-        </address>
-    
-    </footer>
+                <li>
+                  <a class="circle-footer">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="circle-footer">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="circle-footer">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </footer>
+      
 </body>
 
 </html>
