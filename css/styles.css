@@ -670,7 +670,7 @@ div {
     text-align: center;
 }
 
-/* icons social media circle hover, avtive*/
+/* icons social media circle hover, active*/
 
 .circle-teams {
     display: flex;
@@ -685,10 +685,11 @@ div {
     }
 
 .circle-teams:hover,
-.circle-teams:active {
+
+.circle-teams:focus {
   background-color: var(--color-selected);
   fill: var(--secundary-color);
-  cursor: pointer;
+ cursor: pointer;
 }
 
 /*Regular Customers icons*/
@@ -706,7 +707,8 @@ div {
   }
   
   .clients-box:hover,
-  .clients-box:active {
+  
+  .clients-box:focus  {
     border-color: var(--color-selected);
     fill: var(--color-selected);
     cursor: pointer;
@@ -724,9 +726,12 @@ div {
 
 .link-footer:hover,
 .link-footer:focus
+
  {
     color: var(--color-selected);
 }
+
+
 
 /* social media  footer*/
 .find-us {
@@ -747,14 +752,24 @@ div {
     background-color: #ffffff10;
   }
   
-.circle-footer:hover,
-.circle-footer:active {
+/*.circle-footer:hover
+
+ {
     background-color: var(--color-selected);
     cursor: pointer;
+    
   }
 
 
+.circle-footer:focus
+  {
+    background-color: #2196F3;
+    
+  }*/
 
-
-
-
+  .circle-footer:hover,
+  .circle-footer:focus {
+    background-color: #2196F3;
+    
+  }
+  
