@@ -706,13 +706,13 @@ div {
     border-radius: 4px;
   }
   
-  .clients-box:hover,
-  
-  .clients-box:focus  {
-    border-color: var(--color-selected);
+/* hover focus clients*/
+.clients-box:hover,
+.clients-box:focus {
     fill: var(--color-selected);
+    border: 1px solid var(--color-selected);
     cursor: pointer;
-  }
+      }
 
 /* link footer*/
 .link-footer {
@@ -726,11 +726,9 @@ div {
 
 .link-footer:hover,
 .link-footer:focus
-
  {
     color: var(--color-selected);
 }
-
 
 
 /* social media  footer*/
@@ -752,20 +750,6 @@ div {
     background-color: #ffffff10;
   }
   
-/*.circle-footer:hover
-
- {
-    background-color: var(--color-selected);
-    cursor: pointer;
-    
-  }
-
-
-.circle-footer:focus
-  {
-    background-color: #2196F3;
-    
-  }*/
 
   .circle-footer:hover,
   .circle-footer:focus {
