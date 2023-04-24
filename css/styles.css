@@ -631,9 +631,9 @@ p {
     margin-right: 10px;
 }
 
-.header-icons:hover,
-.header-icons:focus {
-    fill: #2196F3;
+.header-icons :hover,
+.header-icons :focus {
+    fill: var(--color-selected);
 }/* CSS link hover focus(azul) */
 
 /* icons antena ,clock, astronaut */
